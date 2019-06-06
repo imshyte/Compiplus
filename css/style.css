@@ -1,0 +1,281 @@
+
+
+body {
+    font-family: "BPG Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+/*    background-color: #f4f4f4;*/
+    box-sizing: border-box;
+}
+
+main {
+    cursor: default;
+    background-color: #f4f4f4;
+}
+
+header {
+    height: 500px;
+    background-image: url("../img/bg-6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-position: center;
+
+}
+
+.color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,.6);
+   opacity: 0.5;
+}
+
+.logo {
+    flex-grow: 2;
+/*    position: relative;*/
+    z-index: 20;
+}
+
+#compiplus {
+    width: 80px;
+    height: auto;
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 0;
+    justify-content: flex-end;
+    width: 500px;
+/*
+     background-color: #FF5959;
+    z-index: 10;
+*/
+}
+
+.menu a {
+    text-decoration: none;
+/*    color: rgb(3,83,164);*/
+    color: white;
+    width: 900px;
+    font-size: 1.1em;
+}
+
+.links {
+    padding: 10px 40px;
+    font-size: 1.2em;
+    z-index: 20;
+    transition: .3s;
+}
+
+
+.links:hover {
+    background-color: #0353A4;
+}
+
+.intro {
+/*    color: rgba(3,83,164, 1);*/
+    color: white;
+    font-size: 1.4em;
+    width: 900px;
+    z-index: 9;
+    position: relative;
+    margin: 0 70% 0 20%;
+    cursor: default;
+}
+
+
+.adv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.05em;
+    background-color: white;
+    margin: 25px 15px;
+    border-radius: 5px;
+    padding: 6px 0;
+    box-shadow: 7px 7px 1px lightgrey; 
+}
+
+.benefits h3 {
+    width: 350px;
+    color: #0353A4;
+    margin: 0;
+}
+
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 60px 0;
+}
+
+i {
+    font-size: 45px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #FF5959;
+    margin: 0 10px;
+}
+
+.service {
+    line-height: 1.3;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 8px lightgrey;
+}
+
+.service ul li {
+    padding: 5px 0 ;
+}
+
+.service h3 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h3{
+/*    background-image: linear-gradient(to left, rgba(3,83,164, .9) 50%, rgba(255,0,0,0));*/
+    color: rgba(3,83,164, 1);
+    width: 100%;
+    margin: 0;
+    padding: 7px 0;
+}
+
+/*
+.container .cont-1 {
+    background-color: #0353A4;
+    color: white;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+}
+*/
+
+.service img {
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.cont-2 {
+ display: flex;
+    flex-direction: row;
+}
+
+.service ul {
+    font-size: 1.2em;
+}
+
+.container{
+    width: 100%;
+}
+
+.momsaxureba {
+    display: grid;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.momsaxureba h2 {
+    margin-bottom: 0;
+    margin-top: 18%;
+}
+
+hr {
+    border:0;
+    border-top: solid 2px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 5px;
+    z-index: 20;
+    margin: 0 auto;
+}
+
+.contact {
+    cursor: default;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(
+           rgba(0, 0, 0, 0.7),
+           rgba(0, 0, 0, 0.7)
+        ), url(../img/bg-2.jpg) no-repeat center;
+    background-size: 100% 100%;  
+    
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact h2 {
+    text-align: center;
+    border: white solid 1px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 1.7em;
+}
+
+.contact li {
+   color: #FFFBFC;
+/*border-bottom: solid 3px #0353A4;*/
+}
+
+hr {
+    border: none;
+    border-bottom: solid 3px white;
+    z-index: 100;
+    height: 10px;
+    width: 100%;
+}
+
+.contact ul {
+    font-size: 1.3em;
+    width: 600px;
+}
+
+footer {
+    cursor: default;
+    color: #0353A4;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 20% 0 20%;
+    border-bottom: solid 15px #0353A4;;
+    font-size: 1.1em;
+}
+
+footer p {
+    flex-grow: 1;
+}
+
