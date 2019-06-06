@@ -1,10 +1,7 @@
-
-
 body {
-    font-family: "BPG Arial", sans-serif;
+    font-family: 'Encode Sans Semi Expanded', 'BPG Arial',  sans-serif;
     padding: 0;
     margin: 0;
-/*    background-color: #f4f4f4;*/
     box-sizing: border-box;
 }
 
@@ -15,12 +12,12 @@ main {
 
 header {
     height: 500px;
-    background-image: url("../img/bg-6.jpg");
+    background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     background-position: center;
-
+    display: flex;
 }
 
 .color-overlay {
@@ -34,101 +31,115 @@ header {
 }
 
 .logo {
-    flex-grow: 2;
-/*    position: relative;*/
-    z-index: 20;
+    margin-left: 20%;
 }
 
-#compiplus {
-    width: 80px;
+#compiplus-logo {
+    width: 40px;
     height: auto;
+
 }
 
-
-
-.nav {
+.nav-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 40px;
+    background-color: white;
+    
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    height: 50px;
+    z-index: 100;
+    margin: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.header-container {
+    width: 100%;
 }
 
 .menu {
+    
     display: flex;
     flex-grow: 0;
     justify-content: flex-end;
     width: 500px;
-/*
-     background-color: #FF5959;
-    z-index: 10;
-*/
+    height: 100%;
+    width: 100%;
+    margin-right: 20%;
 }
 
-.menu a {
-    text-decoration: none;
-/*    color: rgb(3,83,164);*/
-    color: white;
-    width: 900px;
-    font-size: 1.1em;
-}
 
-.links {
-    padding: 10px 40px;
+
+.nav-links {
+    display: flex;
+    padding: 10px 20px;
     font-size: 1.2em;
     z-index: 20;
     transition: .3s;
 }
 
-
-.links:hover {
-    background-color: #0353A4;
+.menu a {
+    align-self: center;
+    text-decoration: none;
+    color: #023A72;
+    font-size: 1.1em;
 }
 
-.intro {
-/*    color: rgba(3,83,164, 1);*/
+.menu a:hover {
+    color: white; 
+}
+    
+   .nav-links:hover {
+    background-color: #023A72;
+}
+.introduction {
     color: white;
     font-size: 1.4em;
     width: 900px;
+    text-align: center;
     z-index: 9;
     position: relative;
-    margin: 0 70% 0 20%;
+    margin: auto;
     cursor: default;
+}
+
+.introduction h1 {
+    margin: 100px;
 }
 
 
 .adv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.05em;
+    text-align: center;
+    font-size: 1.25em;
     background-color: white;
     margin: 25px 15px;
     border-radius: 5px;
-    padding: 6px 0;
-    box-shadow: 7px 7px 1px lightgrey; 
+    padding:  15px 12px;
+    box-shadow: 0 8px 10px -5px lightgrey; 
 }
 
-.benefits h3 {
+.primary-content p {
     width: 350px;
     color: #0353A4;
     margin: 0;
 }
 
 
-.benefits {
+.primary-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px 60px 0;
+    padding:  60px 0;
 }
 
 i {
     font-size: 45px;
-    color: white;
+    color: #2651a8;
     padding: 15px;
     border-radius: 50%;
-    background-color: #FF5959;
+/*    background-color: #2651a8;*/
     margin: 0 10px;
 }
 
@@ -143,7 +154,8 @@ i {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    box-shadow: 0 8px lightgrey;
+/*    box-shadow: 0 8px lightgrey;*/
+    box-shadow: 0 12px 10px -5px lightgrey;
 }
 
 .service ul li {
@@ -161,24 +173,11 @@ i {
 }
 
 .container h3{
-/*    background-image: linear-gradient(to left, rgba(3,83,164, .9) 50%, rgba(255,0,0,0));*/
     color: rgba(3,83,164, 1);
     width: 100%;
     margin: 0;
     padding: 7px 0;
 }
-
-/*
-.container .cont-1 {
-    background-color: #0353A4;
-    color: white;
-    height: 30px;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    font-size: 10px;
-}
-*/
 
 .service img {
     width: auto;
@@ -195,19 +194,15 @@ i {
     font-size: 1.2em;
 }
 
-.container{
+.secondary-content{
     width: 100%;
-}
-
-.momsaxureba {
     display: grid;
     justify-content: center;
     grid-gap: 50px;
 }
 
-.momsaxureba h2 {
+.secondary-content h2 {
     margin-bottom: 0;
-    margin-top: 18%;
 }
 
 hr {
@@ -237,7 +232,7 @@ hr {
     color: white;
 }
 
-.contact h2 {
+#cta {
     text-align: center;
     border: white solid 1px;
     width: 400px;
@@ -246,9 +241,13 @@ hr {
     font-size: 1.7em;
 }
 
+.contact ul {
+    font-size: 1.3em;
+    width: 600px;
+}
+
 .contact li {
    color: #FFFBFC;
-/*border-bottom: solid 3px #0353A4;*/
 }
 
 hr {
@@ -257,11 +256,6 @@ hr {
     z-index: 100;
     height: 10px;
     width: 100%;
-}
-
-.contact ul {
-    font-size: 1.3em;
-    width: 600px;
 }
 
 footer {
