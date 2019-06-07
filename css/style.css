@@ -327,11 +327,11 @@ footer p {
 }
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and max-width: 400px) {
     
     
     body {
-        width: 100%;p
+        width: 100%;
     }
     
     .introduction h1 {
