@@ -329,6 +329,11 @@ footer p {
 
 @media only screen and (max-width: 400px) {
     
+    
+    body {
+        width: 100%;
+    }
+    
     .introduction h1 {
         font-size: 1.5em;
         margin-bottom: 50px;
