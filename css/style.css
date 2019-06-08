@@ -270,139 +270,78 @@ footer p {
     flex-grow: 1;
 }
 
-
-
-#side-menu {
+.item-2 {
     display: none;
 }
+
 
 /* MEDIA QUERIES */
 
 
-@media only screen and (max-width: 900px) {
+
+@media screen and (max-width: 768px){
     .introduction h1 {
-        font-size: 1.8em;
-    } 
+        color: red;
+    }  
     
     .service img {
+        height: 250px;
         width: auto;
-        height: 200px;
     }
     
     .service {
-        padding: 5px 10px;
-        width: 750px;
-    }
-    
-    #cta{
-        width: 300px;
-        padding: 15px;
-        font-size: 1.3em;
-    }
-    
-    .contact ul{
-        font-size: 19px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
     }
     
     footer {
         font-size: 16px;
     }
     
-    #side-menu {
-        display: none;
-    }
-
-/*
-    .item-2 {
-        display: none;
-    }
-*/
-    
-}
-
-@media only screen and (max-width: 768px) {
-    .service {
-        width: 650px;
+    .contact {
+        font-size: 15px;
     }
 }
 
 
-@media (min-width: 320px) and (max-width:480px) {
-    
-    
-    body {
-        width: 100%;
-    }
-    
+@media screen and (min-width: 768px) and (max-width: 950px){
     .introduction h1 {
-        font-size: 1.5em;
-        margin-bottom: 50px;
+        color: blue;
     }
     
-    .introduction p {
-        font-size: .9em;
+    
+    .service img {
+        height: 250px;
+        width: auto;
     }
     
     .service {
+        width: 500px;
+        display: flex;
         flex-direction: column;
-        width: 350px;
     }
     
     footer {
+        font-size: 16px;
+    }
+    
+    .contact {
         font-size: 15px;
     }
-    
-    .contact ul{
+}
+
+@media screen and (min-width: 950px){
+    .service img {
+/*        flex-direction: row;*/
         width: 350px;
-        margin: 0;
-        padding:  0;
+        height: auto;
     }
     
-    header i{
-        color: rgba(3,83,164, 1);
-        padding: 0;
-        margin-right: 15px;
+    .service {
+        width: 800px;
     }
-    
-/*
-#side-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: rgba(1, 1, 1, 0.7);
-    width: 0;
-    max-width: 300px;
-    height: 100%;
-    transition: .3s;
-    display: none;
 }
-*/
-    
-    .menu {
-        display: none;
-    }
-    
-    .logo {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-left: 15px;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .logo item-1{
-        flex-grow: 2;
-    }
-    
-    
-}
-
-
-
-
-
-
 
 
 
