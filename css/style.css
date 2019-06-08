@@ -111,7 +111,7 @@ header {
     text-align: center;
     font-size: 1.25em;
     background-color: white;
-    margin: 25px 15px;
+    margin: 25px 20px;
     border-radius: 5px;
     padding:  15px 12px;
     box-shadow: 0 8px 10px -5px lightgrey; 
@@ -281,8 +281,11 @@ footer p {
 
 @media screen and (max-width: 768px){
     .introduction h1 {
-        color: red;
-    }  
+        font-size: 1.5em;
+/*        padding: 0;*/
+        margin: 0;
+        padding: 30px 0 60px;
+    }
     
     .service img {
         height: 250px;
@@ -291,6 +294,7 @@ footer p {
     
     .service {
         width: 500px;
+        font-size: .9em;
         display: flex;
         flex-direction: column;
     }
@@ -299,36 +303,62 @@ footer p {
         font-size: 16px;
     }
     
+    #cta {
+        width: 350px;
+        padding: 20px 0;
+    }
+    
     .contact {
         font-size: 15px;
     }
+    
+    footer p {
+        width: 50px;
+    }
+    
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 950px){
     .introduction h1 {
-        color: blue;
+        font-size: 1.5em;
+/*        padding: 0;*/
+        margin: 0;
+        padding: 30px 0 60px;
     }
     
     
     .service img {
-        height: 250px;
+        height: 200px;
         width: auto;
     }
     
     .service {
-        width: 500px;
+        font-size: .9em;
+        width: 700px;
         display: flex;
-        flex-direction: column;
+/*        flex-direction: column;*/
+        padding: auto 0;
+    }
+    
+    #cta {
+        width: 350px;
+        padding: 20px 0;
     }
     
     footer {
         font-size: 16px;
     }
     
+    footer p {
+        width: 50px;
+    }
+    
     .contact {
         font-size: 15px;
     }
+    
+    
 }
 
 @media screen and (min-width: 950px){
@@ -338,11 +368,103 @@ footer p {
         height: auto;
     }
     
+    #cta {
+/*        width: 350px;*/
+        padding: 20px 0;
+    }
+    
     .service {
         width: 800px;
+        margin: 0;
+    }
+    .introduction h1 {
+        font-size: 1.5em;
+/*        padding: 0;*/
+        margin: 0;
+        padding: 30px 0 60px;
+    }
+    
+    footer p {
+        width: 50px;
     }
 }
 
+
+@media screen and (max-width: 650px) {
+    .service {
+        width: 400px;
+    }
+    
+    .service img {
+        width: 400px;
+    }
+    
+    .contact {
+        font-size: .8em;
+        
+    }
+    
+    .contact ul {
+        width: 400px;
+    }
+    
+    footer {
+        font-size: 14px;
+    }
+    
+    #cta {
+        padding: 20px 0;
+        width: 350px;
+    }
+    
+    footer p {
+        width: 50px;
+    }
+    
+    .service h3 {
+        width: 350px;
+    }
+
+    .introduction h1 {
+        font-size: 1.5em;
+/*        padding: 0;*/
+        margin: 0;
+        padding: 30px 0 60px;
+    }
+    
+    .introduction p {
+        width: 300px;
+    }
+    
+    .introduction {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 950px) {
+    .contact ul{
+        width: 400px;
+    }
+    
+    .contact {
+        font-size: .8em;
+    }
+    
+    #cta {
+        width: 350px;
+        padding: 20px 0;
+    }
+    
+    footer p {
+        width: 50px;
+    }
+}
 
 
 
